@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_radial"
+    >
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <TextView
+        android:id="@+id/tvTeamOne"
+        android:layout_width="135dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="148dp"
+        android:text="Team One"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvPointTeamOne"
+        android:layout_width="73dp"
+        android:layout_height="80dp"
+        android:text="0"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTeamOne" />
+
+    <Button
+        android:id="@+id/btn3PointsOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="+3 Points"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPointTeamOne" />
+
+    <Button
+        android:id="@+id/btn2PointsOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="+2 Points"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn3PointsOne" />
+
+    <Button
+        android:id="@+id/btnFreeThrowOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Free Throws"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2PointsOne" />
+
+    <TextView
+        android:id="@+id/tvTeamTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:text="Team Two"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvPointTeamTwo"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="34dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/tvTeamTwo" />
+
+    <Button
+        android:id="@+id/btn3PointsTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+3 Points"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn3PointsOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/btn2PointsTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2 Points"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn2PointsOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+
+    <Button
+        android:id="@+id/btnFreeThrowTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free Trows"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnFreeThrowOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/btnCleanPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="72dp"
+        android:text="Clear Points"
+        android:textSize="20dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/btnFreeThrowTwo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnFreeThrowOne"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
